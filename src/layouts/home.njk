@@ -28,11 +28,11 @@ layout: base
 </header>
 
 <section class="post-list__wrapper">
-  <h2 class="post-list__heading">Recent Posts</h2>
+  <h2 class="post-list__heading">Artigos recentes</h2>
 
   {% set postslist = collections.posts | head(-10) %}
   {% include "posts-list.njk" %}
 
 </section>
 
-<a class="all-posts-link" href="{{ '/blog/' | url }}">View All Posts</a>
+<a class="all-posts-link" href="{{ '/blog/' | url }}">Todos os textos</a>

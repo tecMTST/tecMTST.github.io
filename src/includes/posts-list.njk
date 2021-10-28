@@ -7,7 +7,7 @@
             {{ post.date | readableDate }}
           </time>
           <span> | </span>
-          <span>{{ post | readingTime }} read</span>
+          <span>{{ post | readingTime }} de leitura</span>
         </div>
 
         <div class="post-list__tags">
@@ -26,7 +26,7 @@
 
       <p class="post-list__excerpt">{{ post.templateContent | excerpt | safe  }}</p>
 
-      <a class="post-list__read-more" href="{{ post.url }}">read article</a>
+      <a class="post-list__read-more" href="{{ post.url }}">leia</a>
     </li>
   {% endfor %}
 </ul>
